@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block header %}
+    Offer currency
+{% endblock %}
+
+{% block content %}
+    <p>
+    Select the type and amount of currency that you would like to offer.
+    </p>
+    <form>
+        <div class="form-group">
+            <select class="form-control" name="currency">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="number" step="0.01" name="amount" placeholder="Amount of currency">
+        </div>
+        <div class="form-group submit">
+            <button class="btn" disabled="disabled" name="offer" type="submit">Offer</button>
+        </div>
+    </form>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+    $(function() {
+        offerPage();
+    });
+    </script>
+{% endblock %}
+

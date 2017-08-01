@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block header %}
+    Currency Exchange
+{% endblock %}
+
+{% block content %}
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">
+            <a href="{% url "offer" %}">
+                I have spare currency.
+            </a>
+        </li>
+        <li class="list-group-item list-group-item-info">
+            <a href="{% url "request" %}">
+                I need currency.
+            </a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+    $(function() {
+        offerPage();
+    });
+    </script>
+{% endblock %}
+

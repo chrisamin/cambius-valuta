@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block header %}
+    Available currencies
+{% endblock %}
+
+{% block content %}
+    <table class="currency-list table" style="display: none">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Code</th>
+                <th>Currency</th>
+                <th>Available</th>
+                <th>Available (EUR)</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="request" style="display: none">
+        <h2 class="currency">Request</span></h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Colleague</th>
+                    <th>Available</th>
+                    <th>Request (<span class="currency"></span>)</th>
+                    <th>Request (Euro)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-success">Request</button></td>
+                    <td><input class="total" readonly="readonly"></input></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(function() {
+            requestPage();
+        });
+    </script>
+{% endblock %}

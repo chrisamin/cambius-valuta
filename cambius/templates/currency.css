@@ -1,0 +1,33 @@
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.content {
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: block;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group.submit {
+    text-align: right;
+}
+
+.total-offer {
+    font-size: 4em;
+}
+
+.stats {
+    float: right;
+}
